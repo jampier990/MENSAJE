@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz San Valentín, Marcos</title>
+    <style>
+        @keyframes latido {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes flotante {
+            0% { transform: translateY(0); opacity: 1; }
+            50% { transform: translateY(-20px); opacity: 0.8; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #ffe6e6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .contenedor {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 77, 77, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+            color: white;
+            position: relative;
+        }
+
+        .imagen img {
+            width: 150px;
+            height: auto;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .mensaje {
+            animation: latido 1.5s infinite;
+        }
+
+        .corazones {
+            position: absolute;
+            top: -20px;
+            right: 10px;
+            font-size: 30px;
+            animation: flotante 1.5s infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="imagen">
+            <img src="https://i.imgur.com/IOWbn14.jpg" alt="Imagen de San Valentín">
+        </div>
+        <div class="mensaje">
+            <h1>💖 Marcos (Alias COCOTIN), con cariño 💖</h1>
+            <p>Te hago recordar lo especial que eres para mí. 🌹</p>
+            <p>Gracias por compartir risas, momentos y cariño. 💕</p>
+            <p>Te quiero mogollón. 💕</p>
+            <p>Hoy y siempre, ¡Feliz San Valentín! 💌</p>
+        </div>
+        <div class="corazones">❤️💖💕</div>
+    </div>
+
+</body>
+</html>
